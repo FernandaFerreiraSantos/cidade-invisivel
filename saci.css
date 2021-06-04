@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', Helvetica, Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000005e;
+    background-image: url("img/saci.webp");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    background-color: #000000AA;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.links ul {
+    gap: 20px;
+    list-style-type: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 0.25s;
+}
+
+.links a:hover {
+    color: #de0611;
+}
+
+main {
+    padding-left: 100px;
+    padding: 15vh 8vw;
+    flex-grow: 1;
+}
+
+main h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 105px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+
+main .content {
+    display: flex;
+    flex-direction: row;
+}
+
+main h2 {
+    font-size: 30px;
+    transform: rotate(-90deg);
+    margin-top: 50px;
+    color: #D81F26;
+}
+
+main p {
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 400px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+
+.info h3 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.info p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.ator {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 3px solid #D81F26;
+}
+
+.personagem {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 3px solid #D81F26;
+}
+
+.entidade {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    height: 40px;
+}

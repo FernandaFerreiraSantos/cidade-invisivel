@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', Helvetica, Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000055;
+    background-image: url("img/cidade-invisivel.png");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    background-color: #000000AA;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.links ul {
+    gap: 20px;
+    list-style-type: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 0.25s;
+}
+
+.links a:hover {
+    color: #de0611;
+}
+
+main {
+    padding: 20vh 10vw;
+    flex-grow: 1;
+}
+
+main h2 {
+    font-size: 30px;
+}
+
+main h1 {
+    font-size: 70px;
+}
+
+main p {
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 800px;
+}
+
+main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #D81F26;
+    margin-top: 20px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+main a:hover {
+    background-color: black;
+    transition: all 0.5s;
+}
+
+footer {
+    text-align: center;
+    height: 40px;
+}
+
+.butterfly {
+    position: absolute;
+    width: 60px;
+    top: 90vh;
+    left: 90vw;
+    filter: brightness(10%);
+    animation: fly 15s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-90vw, -90vh);
+    }
+}
